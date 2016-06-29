@@ -1,7 +1,11 @@
 module.exports = {
-  entry: [
-    './src/index.js'
-  ],
+  devServer: {
+    inline:true,
+    port: 8008
+  },
+  entry: {
+    javascript: './src/index.js'
+  },
   output: {
     path: __dirname,
     publicPath: '/',
